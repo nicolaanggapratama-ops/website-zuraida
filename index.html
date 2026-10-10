@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3b1020">
+  <title>Untuk Zuraida Safitri ♡</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="stars" aria-hidden="true"></div>
+  <div id="hearts" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <main class="site">
+    <div class="tiny-label">A LITTLE SOMETHING FOR YOU</div>
+    <div class="ornament">✦ ♡ ✦</div>
+    <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+    <h1>Happy Birthday,<br><span>Zuraida Safitri</span></h1>
+
+    <!-- Kalimat pengantar di bawah nama dihilangkan sesuai permintaan. -->
+
+    <div class="birthday-icon" aria-hidden="true">🎂</div>
+
+    <button id="openBtn" class="primary" type="button">
+      Buka pesan ini <span>♡</span>
+    </button>
+
+    <section id="letter" class="letter hidden">
+      <p class="section-label">A LETTER FROM MY HEART</p>
+      <h2>Untuk Zuraida,</h2>
+      <div id="messageText" class="message-text"></div>
+      <p class="signoff">Dengan sayang, <span>♡</span></p>
+    </section>
+
+    <section id="reasons" class="reasons hidden">
+      <p class="section-label">A FEW LITTLE THINGS</p>
+      <h2>Hal-hal yang aku suka darimu</h2>
+      <div class="reason-grid">
+        <div class="reason"><span>♡</span><b>Senyummu</b><small>Hal sederhana yang bisa bikin hari terasa lebih cerah.</small></div>
+        <div class="reason"><span>✧</span><b>Dirimu sendiri</b><small>Kamu berharga, tanpa harus menjadi orang lain.</small></div>
+        <div class="reason"><span>☾</span><b>Kehadiranmu</b><small>Terima kasih sudah menjadi bagian dari ceritaku.</small></div>
+        <div class="reason"><span>∞</span><b>Momen kecil</b><small>Hal sederhana bersamamu punya arti tersendiri.</small></div>
+      </div>
+    </section>
+
+    <section id="finalNote" class="final-note hidden">
+      <div class="big-heart">♥</div>
+      <h2>Semoga banyak hal baik<br>menemukanmu tahun ini.</h2>
+      <p>Semoga kamu selalu sehat, bahagia, dimudahkan dalam mengejar impian, dan dikelilingi orang-orang yang menyayangimu. Jangan lupa, kamu pantas mendapatkan hal-hal indah.</p>
+      <p class="gold">Selamat ulang tahun, Zuraida. ✨</p>
+    </section>
+
+    <!-- Tidak ada tombol atau label musik; audio berjalan di latar belakang. -->
+    <audio id="birthdayMusic" loop preload="auto" autoplay>
+      <source src="{{ url_for('static', filename='audio/cinta_luar_biasa.mp3') }}" type="audio/mpeg">
+      Browser kamu tidak mendukung audio HTML5.
+    </audio>
+
+    <footer>made with love, just for you <span>♡</span></footer>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>
